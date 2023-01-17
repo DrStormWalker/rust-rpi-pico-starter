@@ -44,6 +44,7 @@
 
         buildInputs = with pkgs; [
           elf2uf2-rs
+          flip-link
         ] ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [
           pkgs.libiconv
         ];
@@ -62,6 +63,7 @@
           rustWithThumbv6mTarget
 
           elf2uf2-rs
+          flip-link
 
           rust-analyzer
           clippy
