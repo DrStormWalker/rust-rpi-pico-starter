@@ -13,6 +13,7 @@
 ## Supported Platforms
 
 - Linux
+- MacOS (Tested on Ventura 13.1)
 
 NOTE: Other platforms may work but are not explicitely defined here
 
@@ -56,7 +57,8 @@ be mounted. This can be achieved by booting the Pico into
 "USB Bootloader mode", by rebooting the pico whilst holding the button
 labelled "BOOTSEL" on the pico.
 
-Once the Pico has rebooted it can be mounted using the provided script
+Once the Pico has rebooted it can be mounted using the provided script.
+NOTE: This script does not work on MacOS instead the Pico is auto mounted.
 
 ```sh
 ./mount-pi.sh
